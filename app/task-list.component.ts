@@ -19,7 +19,7 @@ export class TaskListComponent {
   public taskList: Task[];
   public onTaskSelect: EventEmitter<Task>;
   public selectedTask: Task;
-  contstructor() {
+  constructor() {
     this.onTaskSelect = new EventEmitter();
   }
   taskClicked(clickedTask: Task): void {
